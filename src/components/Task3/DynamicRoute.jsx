@@ -1,7 +1,15 @@
 import { Link, Outlet, useLocation, useParams } from "react-router-dom"
-import data from '/api/data.json'
+import { useEffect, useState } from "react";
 
 function DynamicRoute() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch(`${import.meta.env.BASE_URL}/api/data.json`)
+            .then((response) => response.json())
+            .then((json) => setData(json))
+            .catch((error) => console.error("Error fetching data:", error));
+    }, []);
 
     let location = useLocation();
     let params = useParams();

@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom"
-import HomeData from "/api/home.json"
-// import "./Home.css"
+import { useEffect, useState } from "react";
 
 function Home() {
-    return (
-        <div className="task-container flex flex-col gap-3 p-3">
+    const [HomeData, setHomeData] = useState([]);
+
+    useEffect(() => {
+        fetch(`${import.meta.env.BASE_URL}/api/home.json`)
+            .then(response => response.json())
+            .then(data => setHomeData(data))
+            .catch(error => console.error("Error fetching home data:", error));
+    }, []);
+// import "./Home.css"
+
+return (
+    <div className="task-container flex flex-col gap-3 p-3">
             <nav>
                 <ul className='flex justify-center w-full'>
                     <li><Link to="/">Home</Link></li>
@@ -135,4 +144,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;
