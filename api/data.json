@@ -1,0 +1,27 @@
+[
+    {
+        "id": 101,
+        "username": "Manav Patel",
+        "email": "manav456@gmail.com"
+    },
+    {
+        "id": 102,
+        "username": "Aman Patel",
+        "email": "aman789@gmail.com"
+    },
+    {
+        "id": 103,
+        "username": "Ketan Patel",
+        "email": "ketanpatel@gmail.com"
+    },
+    {
+        "id": 104,
+        "username": "Harshil Diyora",
+        "email": "harshil123@gmail.com"
+    },
+    {
+        "id": 105,
+        "username": "Shyam Mori",
+        "email": "shyam369@gmail.com"
+    }
+]

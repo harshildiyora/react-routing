@@ -1,0 +1,50 @@
+[
+    {
+        "id": 101,
+        "link": "/task1",
+        "title": "Task 1 : Simple Routing",
+        "steps": {
+            "heading": "Create a basic React application with the following routes:",
+            "steps": [
+                "/ - Displa ys a “Home Page” component.",
+                "/about - Displays an “About Page” component.",
+                "/contact - Displays a “Contact Page” component."
+            ]
+        },
+        "hints": [
+            "Use react-router-dom to implement routing.",
+            "Add navigation links to switch between pages."
+        ]
+    },
+    {
+        "id": 102,
+        "link": "/dashboard",
+        "title": "2. Nested Routing",
+        "steps": {
+            "heading": "Create a React application with nested routes:",
+            "steps": [
+                "/dashboard - Displays a “Dashboard” component.",
+                "/dashboard/profile - Displays a “Profile” component inside the Dashboard.",
+                "/dashboard/settings - Displays a “Settings” component inside the Dashboard."
+            ]
+        },
+        "hints": [
+            "Implement nested routing using Outlet from react-router-dom."
+        ]
+    },
+    {
+        "id": 103,
+        "link": "/dynamic-route",
+        "title": "3. Dynamic Routing",
+        "steps": {
+            "heading": "",
+            "steps": [
+                "Create a route /user/:id that displays a “User Profile” component. The id parameter should dynamically fetch and display the user&apos;s details (mock data)."
+            ]
+        },
+        "hints": [
+            "Use useParams from react-router-dom to access the id.",
+            "Display a user&apos;s details dynamically based on the URL."
+        ]
+    }
+]
