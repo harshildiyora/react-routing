@@ -13,7 +13,7 @@ function UserProfile() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                console.log(`/public/api/data.json`);
+                console.log(`/api/data.json`);
                 
                 const response = await fetch(`${import.meta.env.BASE_URL}api/data.json`); // Fetch from `public` folder
                 if (!response.ok) {

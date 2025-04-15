@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import HomeData from "/public/api/home.json"
+import HomeData from "/api/home.json"
 // import "./Home.css"
 
 function Home() {
