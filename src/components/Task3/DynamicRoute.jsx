@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation, useParams } from "react-router-dom"
-import data from '/api/data.json'
+import data from '/public/api/data.json'
 
 function DynamicRoute() {
 
